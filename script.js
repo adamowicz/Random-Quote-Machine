@@ -33,6 +33,8 @@ function createTweet(input) {
 $(document).ready(function () {
     getQuote();
     $('.trigger').click(function(){
+        $('.quote').text('Quote Loading...');
+        $('.author').text('');
         getQuote();
     });
 });
